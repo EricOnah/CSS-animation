@@ -203,3 +203,186 @@ body {
 .btn-link__bg-anime6:hover::before {
   transform: translateX(100%) rotate(45deg);
 }
+
+.btn-link__bg-anime7 {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  padding: 40px 80px;
+  border: 5px solid rgb(17, 39, 17);
+  color: transparent;
+  font-size: 1.5rem;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.btn-link__bg-anime7::before {
+  content: "Button";
+  text-decoration: uppercase;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(17, 39, 17);
+  transition: all 0.5s;
+}
+
+.btn-link__bg-anime7::after {
+  content: "Button";
+  text-decoration: uppercase;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(17, 39, 17);
+  transition: all 0.5s;
+  transform: translate(-100%, 100%);
+}
+
+.btn-link__bg-anime7:hover::before {
+  transform: translate(100%, -100%);
+}
+
+.btn-link__bg-anime7:hover::after {
+  transform: translate(0, 0);
+}
+
+.btn-link__bg-anime8 {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  padding: 40px 80px;
+  border: 5px solid rgb(67, 2, 70);
+  color: rgb(67, 2, 70);
+  font-size: 1.5rem;
+  position: relative;
+  /* transition: all 1s; */
+  overflow: hidden;
+}
+
+.btn-link__bg-anime8::before {
+  content: "Button";
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(240, 72, 30);
+  transition: all 1s;
+  transform: scale(5);
+  opacity: 0;
+}
+
+.btn-link__bg-anime8:hover::before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.btn-link__bg-anime9 {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  padding: 40px 80px;
+  border: 5px solid rgb(14, 26, 66);
+  color: rgb(14, 26, 66);
+  font-size: 1.5rem;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.btn-link__bg-anime9::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  z-index: -1;
+  border-radius: 0 0 50% 50%;
+  background-color: rgb(201, 198, 10);
+  transition: all 0.5s;
+}
+
+.btn-link__bg-anime9:hover {
+  color: white;
+}
+.btn-link__bg-anime9:hover::before {
+  height: 250%;
+}
+
+.btn-link__bg-anime10 {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  letter-spacing: -2px;
+  padding: 40px 80px;
+  border: 5px solid rgb(240, 72, 30);
+  color: rgb(240, 72, 30);
+  font-size: 1.5rem;
+  position: relative;
+  transition: all 1s;
+  /* overflow: hidden; */
+}
+
+.btn-link__bg-anime10::before {
+  content: "Button";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  transform: rotateX(270deg);
+  transform-origin: top;
+  transition: all 0.5s;
+}
+
+.btn-link__bg-anime10::after {
+  content: "button";
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  transform: rotateX(270deg);
+  transform-origin: top;
+  transition: all 0.5s;
+  transition-delay: 0.25s;
+}
+
+.btn-link__bg-anime10:hover::after {
+  transform: rotateX(0);
+}
+
+.btn-link__bg-anime10:hover::before {
+  transform: rotateX(0);
+}

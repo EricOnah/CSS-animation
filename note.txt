@@ -15,3 +15,6 @@ or smaller.
 
 transform: translateZ(200px)
 You can also use perspective and other transform perspective.
+
+
+When transition-delay, add it after transition.
