@@ -12,6 +12,7 @@
   /* short for all the transitions: property duration timing-function delay; properties, we separate with "," */
   transition: background-color 2s ease-in-out 1s, color 2s ease-in-out 1s,
     width 2s ease-in-out 1s;
+  /* if we want all the properties to have the same transition animation we can use "all" instead */
 }
 
 .btn:hover {

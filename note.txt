@@ -1,0 +1,17 @@
+Animatable properties are those that can be expressed by numbers, colors.
+
+Tranform properties: translate(x, y), scale(x, y), rotate(degrees), skew(x(deg), y(deg) )
+
+Transform origin: changes the point from where the transform properties is anchored to. It takes values like:
+top, center, bottom, left, right, combinations of the coordinates.
+It also takes percentage values. X axis first then the y axis. a transform of origin of 100% 100% is the same
+as bottom right. 100% on x axis means move from left to the end of the element on the right and 100% y axis
+means move from that end of the element of the right down to the end of the element on the bottom.
+
+To create a 3d element we have to add perspective to the element's container element.
+perspective is expressed as the distance between the computer screen and our eyes.
+After that, you can use the Z axis to move the item closer or further away from the eye is expressed as bigger
+or smaller.
+
+transform: translateZ(200px)
+You can also use perspective and other transform perspective.
