@@ -6,14 +6,18 @@
   border: none;
   display: block;
   margin: 0 auto;
-  transition-property: background-color, color;
-  transition-duration: 1s;
-  transition-delay: 30ms;
+  /*transition-property: background-color color width; /* shorthand for this is "all"*/
+  /* transition-duration: 1s;
+  transition-delay: 30ms; */
+  /* short for all the transitions: property duration timing-function delay; properties, we separate with "," */
+  transition: background-color 2s ease-in-out 1s, color 2s ease-in-out 1s,
+    width 2s ease-in-out 1s;
 }
 
 .btn:hover {
   background-color: red;
   color: yellow;
+  width: 250px;
 }
 
 .move {
