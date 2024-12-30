@@ -1,5 +1,9 @@
 body {
   perspective: 500px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  height: 100vh;
 }
 
 .move-me {
