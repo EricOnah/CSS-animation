@@ -1,0 +1,55 @@
+.btn {
+  width: 200px;
+  height: 50px;
+  background-color: blue;
+  color: white;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  transition-property: background-color, color;
+  transition-duration: 1s;
+}
+
+.btn:hover {
+  background-color: red;
+  color: yellow;
+}
+
+.move {
+  width: 150px;
+  height: 50px;
+  margin: 2rem;
+  background-color: red;
+  color: white;
+  border: none;
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: translate();
+  transition-duration: 3s;
+}
+
+.move:hover {
+  transform: translate(900px, 0);
+}
+
+#ease {
+  transition-timing-function: ease;
+}
+
+#linear {
+  transition-timing-function: linear;
+}
+
+#ease-in {
+  transition-timing-function: ease-in;
+}
+
+#ease-out {
+  transition-timing-function: ease-out;
+}
+#ease-in-out {
+  transition-timing-function: ease-in-out;
+}
