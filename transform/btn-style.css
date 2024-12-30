@@ -4,6 +4,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .btn-link__bg-anime {
@@ -116,4 +117,89 @@ body {
 
 .btn-link__bg-anime3:hover {
   color: white;
+}
+
+.btn-link__bg-anime4 {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  letter-spacing: -2px;
+  padding: 40px 80px;
+  border: 5px solid rgb(240, 72, 30);
+  color: rgb(240, 72, 30);
+  font-size: 1.5rem;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.btn-link__bg-anime4:hover {
+  font-weight: 900;
+  letter-spacing: 10px;
+  border: 6px solid rgb(240, 72, 30);
+}
+
+.btn-link__bg-anime5 {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: black;
+  padding: 40px 80px;
+  border: 5px solid black;
+  color: rgb(240, 72, 30);
+  font-size: 1.5rem;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.btn-link__bg-anime5::before {
+  content: "YEAH!";
+  position: absolute;
+  color: white;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(240, 72, 30);
+  transform: translateY(-100%);
+  transition: all 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-link__bg-anime5:hover::before {
+  transform: translateY(0%);
+}
+
+.btn-link__bg-anime6 {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  padding: 40px 80px;
+  border: 5px solid black;
+  color: black;
+  font-size: 1.5rem;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.btn-link__bg-anime6::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 40px;
+  background-color: black;
+  transform: translateX(-100%) rotate(45deg);
+  transition: all 2s;
+  z-index: -1;
+}
+
+.btn-link__bg-anime6:hover::before {
+  transform: translateX(100%) rotate(45deg);
 }
