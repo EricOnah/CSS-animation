@@ -341,7 +341,6 @@ body {
   font-size: 1.5rem;
   position: relative;
   transition: all 1s;
-  /* overflow: hidden; */
 }
 
 .btn-link__bg-anime10::before {
@@ -385,4 +384,69 @@ body {
 
 .btn-link__bg-anime10:hover::before {
   transform: rotateX(0);
+}
+
+.btn-link__bg-anime11 {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  letter-spacing: -2px;
+  padding: 40px 80px;
+  /* border: 5px solid yellow; */
+  color: black;
+  font-size: 1.5rem;
+  position: relative;
+  transition: all 1s;
+  /* overflow: hidden; */
+}
+
+.btn-link__bg-anime11::before,
+.btn-link__bg-anime11::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+  border-radius: 100%;
+  transition: all 0.5s;
+}
+
+.btn-link__bg-anime11::before {
+  left: 0;
+  transform: translateY(-50%);
+  box-shadow: -80px 0 0 yellow;
+}
+
+.btn-link__bg-anime11::after {
+  right: 0;
+  transform: translateY(-50%);
+  box-shadow: 80px 0 0 yellow;
+}
+
+.btn-link__bg-anime11:hover::before {
+  left: 50%;
+  box-shadow: 30px 0 0 yellow;
+  transform: translateX(-50%) translateY(-50%);
+}
+.btn-link__bg-anime11:hover::after {
+  right: 50%;
+  transform: translateX(50%) translateY(-50%);
+  box-shadow: 30px 0 0 yellow;
+}
+
+/* .btn-link__bg-anime11 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 40px 80px;
+  background-color: yellow;
+  transform: scale(0);
+  transition: all 0.5s;
+} */
+
+.btn-link__bg-anime11:hover span {
+  /* transform: scale(1); */
+  transition-delay: 0.5s;
 }
