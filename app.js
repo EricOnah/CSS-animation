@@ -20,4 +20,14 @@ function solve(n) {
   );
 }
 
-console.log(solve(15));
+const userScores = {
+  john: 85,
+  sarah: 92,
+  mike: 78,
+  lisa: 95,
+};
+
+const scoresArray = Array.from(Object.entries(userScores), ([name, score]) => {
+  return { name, score };
+});
+console.log(scoresArray);
