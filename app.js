@@ -28,6 +28,6 @@ const userScores = {
 };
 
 const scoresArray = Array.from(Object.entries(userScores), ([name, score]) => {
-  return { name, score };
+  return { name: name, score: score };
 });
 console.log(scoresArray);
